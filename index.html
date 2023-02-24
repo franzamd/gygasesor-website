@@ -18,13 +18,95 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>GyG Asesor</title>
+    <script src="js/script.js" defer></script>
+    <title>G&G Asesor</title>
   </head>
   <body>
+    <!-- Nav Container -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container For All Items -->
+      <div class="flex items-center justify-between">
+        <!-- Flex Container For Logo/Menu -->
+        <div class="flex items-center space-x-20">
+          <!-- Left Menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a
+              href="#snippets"
+              class="text-grayishViolet hover:text-veryDarkViolet"
+              >Sistema Contable</a
+            >
+            <a
+              href="#supercharge"
+              class="text-grayishViolet hover:text-veryDarkViolet"
+              >Servicios</a
+            >
+            <a
+              href="https://wa.link/f345qx"
+              target="_blank"
+              rel="noopener"
+              class="text-grayishViolet hover:text-veryDarkViolet"
+              >Contáctanos</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Buttons Menu -->
+        <div
+          class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex"
+        >
+          <a
+            href="https://contable.asesorestja.com"
+            target="_blank"
+            rel="noopener"
+            class="px-8 py-3 font-bold text-white bg-lightBlue rounded-full hover:opacity-70"
+            >Acceder Sistema</a
+          >
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-darkGrayishBlue left-6 right-6 top-20 z-100"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        >
+          <a href="#snippets" class="w-full text-center">Sistema Contable</a>
+          <a href="#supercharge" class="w-full text-center">Servicios</a>
+          <a
+            href="https://wa.link/f345qx"
+            target="_blank"
+            rel="noopener"
+            class="w-full text-center"
+            >Contáctanos</a
+          >
+          <a
+            href="https://contable.asesorestja.com"
+            target="_blank"
+            rel="noopener"
+            class="w-full py-3 text-center rounded-full bg-lightBlue"
+            >Acceder Sistema</a
+          >
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero Section -->
     <section id="hero">
       <div class="section-container mb-40 pt-16 h-25">
-        <img src="images/logo.svg" alt="" class="mx-auto my-16" />
+        <img src="images/logo.png" alt="" class="mx-auto my-16 h-32" />
 
         <h3>Asesores Contables</h3>
 
@@ -41,10 +123,10 @@
             rel="noopener"
             class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
           >
-            Acceder al Sistema
+            Acceder Sistema
           </a>
           <a
-            href="https://maps.google.com/?q=-21.536798,-64.733940"
+            href="https://wa.link/f345qx"
             target="_blank"
             rel="noopener"
             class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
@@ -228,7 +310,7 @@
     <!-- Bottom CTA Section -->
     <section id="bottom">
       <div class="section-container my-20">
-        <h3>GyG Asesores</h3>
+        <h3>G&G Asesores</h3>
         <p class="section-content text-xl">
           Sistema Contable se encuentra disponible para nuestros clientes.
         </p>
@@ -244,10 +326,10 @@
             target="_blank"
             class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
           >
-            Acceder al Sistema
+            Acceder Sistema
           </a>
           <a
-            href="https://maps.google.com/?q=-21.536798,-64.733940"
+            href="https://wa.link/f345qx"
             rel="noopener"
             target="_blank"
             class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
@@ -262,7 +344,7 @@
       <div class="section-container">
         <div class="flex flex-col items-center justify-between md:flex-row">
           <!-- Image -->
-          <img src="images/logo.svg" alt="" class="scale-50" />
+          <img src="images/logo.png" alt="" class="scale-50 h-32" />
           <!-- Container for Menus & Social -->
           <div
             class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
